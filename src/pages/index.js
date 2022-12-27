@@ -11,9 +11,9 @@ const IndexPage = ({ data }) => {
 
     const sectionIntro = (
         <section>
-            <div className="container">
+            <div className="container my-6">
                 <h1>{title}</h1>
-                <h2>{pageHome.introheadline}</h2>
+                <h2 class="h4">{pageHome.introheadline}</h2>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: pageHome.introbody,
@@ -40,7 +40,6 @@ export const pageQuery = graphql`
         }
     }
 `
-
 
 export const Head = ({ data }) => {
     const {
