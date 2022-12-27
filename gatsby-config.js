@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `OnMed - Reconnecting prople to better health`,
+    title: `S4DC Gatsby Boilerplate`,
     siteUrl: `https://onmed.com`,
   },
 

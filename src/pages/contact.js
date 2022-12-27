@@ -1,31 +1,23 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import HeroPrimary from "../components/hero-primary";
-import ContactFormIFrame from "../components/contact-form-iframe";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
-import { ImgHeroManTouchscreen } from "../components/images/heroes/man-touchscreen";
+import { ImgHeroExample } from "../components/images/heroes/example";
 
 const AboutPage = ({ data }) => {
     const sectionHero = (
         <Hero
-            img={<ImgHeroManTouchscreen alt="Contact us" position="90% 50%" />}
+            img={<ImgHeroExample alt="Contact us" position="90% 50%" />}
         >
             Contact
         </Hero>
     );
 
     const sectionContact = (
-        <section className="container py-4 ">
-            <p className="lead py-4 py-md-6 text-center">
-                Please complete this form, and a member of our team will be in
-                touch shortly.
+        <section className="container my-5">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <div className="row justify-content-center">
-                <div className="col-md-9 col-md-6">
-                    <ContactFormIFrame className="mb-md-6" />
-                </div>
-            </div>
         </section>
     );
 

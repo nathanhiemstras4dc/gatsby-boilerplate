@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: $hero-height;
+  &--secondary {
+    min-height: $hero-height-secondary;
+    background-color: $primary;
+  }
+
+  &--bg-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    > *,
+    & img {
+      height: 100%;
+    }
+  }
+
+  &--overlay {
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+      padding-top: $menu-primary-height; // Because the menu is sticky
+      padding-bottom: $spacing-4;
+    }
+  }
+}

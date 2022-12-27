@@ -1,15 +1,15 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-export function ImgHeroGrabbingPillBottles(props) {
+export function ImgHeroExample(props) {
     return (
         <StaticImage
-            src="../../../../static/images/heroes/grabbing-pill-bottles.jpg"
+            src="../../../../static/images/heroes/example.jpg"
             alt={props.alt}
             className={props.className}
             layout="fullWidth"
             transformOptions="cover"
-            objectPosition={props.position}
+            objectPosition={props.position || "50% 50%"}
         />
     );
 }
