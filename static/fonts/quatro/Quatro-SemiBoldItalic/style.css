@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Quatro';
+    src: local('Quatro SemiBold Italic'), local('Quatro-SemiBold-Italic'),
+        url('Quatro-SemiBoldItalic.woff2') format('woff2'),
+        url('Quatro-SemiBoldItalic.woff') format('woff'),
+        url('Quatro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }

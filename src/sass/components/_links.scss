@@ -1,0 +1,14 @@
+.link {
+    &-underline {
+        text-decoration: $link-decoration;
+    }
+    &-no-underline {
+        text-decoration: none;
+    }
+    &s-white {
+        a,
+        a:hover {
+            color: $white;
+        }
+    }
+}

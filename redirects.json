@@ -1,0 +1,10 @@
+[
+    {
+        "fromPath": "/lvcva/",
+        "toPath": "http://onmed.biz/lvcva/"
+    },
+    {
+        "fromPath": "/tamu/",
+        "toPath": "http://onmed.biz/tamu/"
+    }
+]

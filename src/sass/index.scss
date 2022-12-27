@@ -1,0 +1,12 @@
+// Define variables that will also override Bootstrap variables
+@import "__variables";
+@import "mixins";
+
+// Import Bootstrap and its default variables
+@import "bootstrap";
+
+// // Components
+@import "components";
+
+// // pages
+@import "pages";

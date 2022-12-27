@@ -1,0 +1,126 @@
+.menu-header-wrapper {
+    background-color: $header-bg-color;
+
+    @include media-breakpoint-up(lg) {
+        background-color: $header-bg-color-desktop;
+        backdrop-filter: blur(3px);
+        position: fixed;
+        box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0.1);
+        z-index: $zindex-fixed + 2;
+        width: 100%;
+        height: $menu-primary-height;
+        // .page-home & {
+        //     background-color: $header-bg-color-home;
+        //     box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0);
+        // }
+    }
+}
+
+.navbar--primary {
+    &-btn.nav-link.nav-link {
+        @extend .btn;
+        @extend .btn-light;
+        @extend .text-nowrap;
+        padding: $btn-padding-y $btn-padding-x;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        @include media-breakpoint-down($menu-primary-breakpoint) {
+            position: fixed;
+            bottom: $spacing-3;
+            left: $spacing-3;
+            right: $spacing-3;
+            &:hover {
+                color: $primary;
+                background-color: $white;
+                border-color: $white;
+            }
+        }
+
+        @include media-breakpoint-up($menu-primary-breakpoint) {
+            color: $white;
+            background-color: $primary;
+            border-color: $primary;
+            margin-left: $spacing-3;
+            z-index: $zindex-fixed + 1;
+        }
+    }
+
+    .nav-link {
+        &:not(.navbar--primary-btn) {
+            font-family: $menu-primary-font;
+
+            @include media-breakpoint-up($menu-primary-breakpoint) {
+                text-transform: uppercase;
+                color: $menu-primary-color-desktop;
+                letter-spacing: $menu-primary-letter-spacing-desktop;
+                font-weight: $menu-primary-weight-desktop;
+                font-size: $menu-primary-size-desktop;
+            }
+        }
+    }
+
+    @include media-breakpoint-down($menu-primary-breakpoint) {
+        .navbar-toggler {
+            &:not(.collapsed) {
+                z-index: $zindex-fixed + 1;
+                position: fixed;
+                top: $spacing-3;
+                right: $spacing-3;
+                background-image: url($svg-x);
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                border: none;
+                .navbar-toggler-icon {
+                    visibility: hidden;
+                }
+            }
+        }
+        .navbar-collapse {
+            &.show {
+                z-index: $zindex-fixed;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                background-color: $primary;
+                padding: $spacing-6 $spacing-4 5rem;
+                display: flex;
+                &:before {
+                    content: " ";
+                    background-image: url(/images/logos/onmed-logo-mark-white.svg);
+                    background-repeat: no-repeat;
+                    position: fixed;
+                    left: -162px;
+                    right: 45px;
+                    top: -90px;
+                    bottom: 30px;
+                    opacity: 0.1;
+                }
+
+                .navbar-nav {
+                    width: 100%;
+                }
+                .nav-link {
+                    &:not(.navbar--primary-btn) {
+                        color: $menu-primary-color;
+                        font-size: $menu-primary-size;
+                        font-weight: $menu-primary-weight;
+                        letter-spacing: $menu-primary-letter-spacing;
+                        z-index: $zindex-fixed + 1;
+
+                        @media (max-height: 700px) {
+                            font-size: $h4-font-size;
+                        }
+
+                        @media (max-height: 500px) {
+                            font-size: $h5-font-size;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

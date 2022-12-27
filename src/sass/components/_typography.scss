@@ -1,0 +1,90 @@
+.tiny {
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+}
+
+@include headline(
+    1,
+    $h1-font-size,
+    $h1-line-height,
+    $h1-letter-spacing,
+    $h1-font-weight
+);
+
+@include headline(
+    2,
+    $h2-font-size,
+    $h2-line-height,
+    $h2-letter-spacing,
+    $h2-font-weight
+);
+
+@include headline(
+    3,
+    $h3-font-size,
+    $h3-line-height,
+    $h3-letter-spacing,
+    $h3-font-weight
+);
+
+@include headline(
+    4,
+    $h4-font-size,
+    $h4-line-height,
+    $h4-letter-spacing,
+    $h4-font-weight
+);
+@include headline(
+    5,
+    $h5-font-size,
+    $h5-line-height,
+    $h5-letter-spacing,
+    $h5-font-weight
+);
+
+@include headline(
+    6,
+    $h6-font-size,
+    $h6-line-height,
+    $h6-letter-spacing,
+    $h6-font-weight
+);
+
+@include headline(
+    7,
+    $h7-font-size,
+    $h7-line-height,
+    $h7-letter-spacing,
+    $h7-font-weight
+);
+
+@include headline(
+    8,
+    $h8-font-size,
+    $h8-line-height,
+    $h8-letter-spacing,
+    $h8-font-weight
+);
+
+h7,
+.h7,
+h8,
+.h8 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: $headings-font-family;
+    color: $headings-color;
+}
+
+.text-dark,
+a.text-dark {
+    color: $dark;
+}
+.text-muted,
+a.text-muted {
+    color: $text-muted;
+}
+.text-disabled,
+a.text-disabled {
+    color: $text-disabled;
+}

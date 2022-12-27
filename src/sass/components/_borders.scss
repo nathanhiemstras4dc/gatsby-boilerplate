@@ -1,0 +1,76 @@
+.testimonial {
+    @include media-breakpoint-up(lg) {
+        border-right: 7px solid $secondary;
+        padding: 38px 35px 38px 0;
+    }
+
+    &-wrapper {
+        @include media-breakpoint-up(lg) {
+            text-align: right;
+            justify-content: end;
+        }
+    }
+
+    &--text {
+        font-family: $headings-font-family;
+        font-size: 24px;
+        line-height: 1.541666667;
+        font-style: italic;
+        font-weight: 350;
+    }
+
+    &--author {
+        font-size: 20px;
+        @include media-breakpoint-down(lg) {
+            color: $text-muted;
+        }
+    }
+}
+
+connection {
+    border: 1px dashed #b51c29;
+    border: 0 dashed transparent;
+    border-radius: 0;
+    position: relative;
+}
+
+.dots {
+    &-corner {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        border: 4px dotted #fe8c6e;
+        border-radius: 0 0 20px 0;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        &-1 {
+            top: 50%;
+            right: 50%;
+            bottom: 2px;
+            left: -4px;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            transform: rotate(180deg);
+            &:after {
+                content: " ";
+                height: 30px;
+                width: 30px;
+                display: block;
+                background: url("https://nathanhiemstra.com/_lib/images/green-dot.png")
+                    50% 50% no-repeat;
+                background-size: cover;
+                margin-left: -15px;
+                margin-bottom: -16px;
+                z-index: 2;
+            }
+        }
+        &-2 {
+            border-top-color: transparent;
+            top: 2px;
+            right: -4px;
+            bottom: calc(50% - 4px);
+            left: calc(50% - 4px);
+        }
+    }
+}

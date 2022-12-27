@@ -1,0 +1,22 @@
+@mixin headline(
+    $name,
+    $size,
+    $line-height,
+    $letter-spacing: null,
+    $font-weight: null
+) {
+    h#{$name},
+    .h#{$name} {
+        @include font-size($size);
+        line-height: $line-height;
+        @if $letter-spacing {
+            letter-spacing: $letter-spacing;
+        }
+        @if $font-weight {
+            font-weight: $font-weight;
+        }
+        &.text-primary {
+            color: $primary;
+        }
+    }
+}

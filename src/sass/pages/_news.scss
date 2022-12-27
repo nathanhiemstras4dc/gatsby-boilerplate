@@ -1,0 +1,10 @@
+.news {
+    &-story {
+        &--lead,
+        &--body {
+            p {
+                margin-bottom: $spacing-5;
+            }
+        }
+    }
+}
