@@ -13,3 +13,14 @@ export function ImgHeroExample(props) {
         />
     );
 }
+
+export function ImgGeneralExample(props) {
+    return (
+        <StaticImage
+            src="../../../../static/images/general/example.jpg"
+            alt={props.alt}
+            className={props.className}
+            layout="fullWidth"
+        />
+    );
+}

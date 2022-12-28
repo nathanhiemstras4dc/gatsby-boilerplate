@@ -23,15 +23,15 @@ $gray-900: #252831 !default;
 $gray-1000: #000000 !default;
 
 $grays: (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900,
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
 ) !default;
 
 $primary: $blue;
@@ -51,19 +51,19 @@ $header-bg-color-home: $cloud;
 // Spacing
 $spacer: 1rem;
 $spacers: (
-    0: 0,
-    1: $spacer * 0.25,
-    // 4px
-    2: $spacer * 0.5,
-    // 8px
-    3: $spacer,
-    // 16px
-    4: $spacer * 1.5,
-    // 24px
-    5: $spacer * 2,
-    // 32px
-    6: $spacer * 3,
-    // 48px
+  0: 0,
+  1: $spacer * 0.25,
+  // 4px
+  2: $spacer * 0.5,
+  // 8px
+  3: $spacer,
+  // 16px
+  4: $spacer * 1.5,
+  // 24px
+  5: $spacer * 2,
+  // 32px
+  6: $spacer * 3,
+  // 48px
 );
 
 // Adding these to match .p-1, .p2, etc.
@@ -142,13 +142,13 @@ $h8-letter-spacing: 0.03em;
 $h8-font-weight: 500;
 
 $font-sizes: (
-    1: $h1-font-size,
-    2: $h2-font-size,
-    3: $h3-font-size,
-    4: $h4-font-size,
-    5: $h5-font-size,
-    6: $h6-font-size,
-    7: $h7-font-size,
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
 );
 
 $lead-font-size: $font-size-base * 1.25; // 20px
@@ -212,4 +212,3 @@ $navbar-light-toggler-border-color: transparent;
 $navbar-toggler-padding-x: 0;
 
 // Backgrounds
-$bg-half-horz-cloud-white: linear-gradient(0deg, #ffff 50%, $cloud 50%);

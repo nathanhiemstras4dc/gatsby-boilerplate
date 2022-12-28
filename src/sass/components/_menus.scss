@@ -103,6 +103,23 @@
         .navbar-nav {
           width: 100%;
         }
+        .nav-link {
+          &:not(.navbar--primary-btn) {
+            color: $menu-primary-color;
+            font-size: $menu-primary-size;
+            font-weight: $menu-primary-weight;
+            letter-spacing: $menu-primary-letter-spacing;
+            z-index: $zindex-fixed + 1;
+
+            @media (max-height: 700px) {
+              font-size: $h4-font-size;
+            }
+
+            @media (max-height: 500px) {
+              font-size: $h5-font-size;
+            }
+          }
+        }
       }
     }
   }

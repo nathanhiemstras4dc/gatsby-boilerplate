@@ -85,28 +85,30 @@ const DocsButtons = () => {
         <>
             <section className="docs docs__section">
                 <h2 className="mt-2">Buttons</h2>
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Default</th>
-                            <th>Primary</th>
-                            <th>Secondary</th>
-                            <th>Success</th>
-                            <th>Warning</th>
-                            <th>Danger</th>
-                            <th>Info</th>
-                            <th>Light</th>
-                            <th>Dark</th>
-                            <th>Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {RowOfButtons("Default")}
-                        {RowOfButtons("Outline", "outline")}
-                        {RowOfButtons("Disabled", "disabled")}
-                    </tbody>
-                </table>
+                <div className="table-responsive">
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Default</th>
+                                <th>Primary</th>
+                                <th>Secondary</th>
+                                <th>Success</th>
+                                <th>Warning</th>
+                                <th>Danger</th>
+                                <th>Info</th>
+                                <th>Light</th>
+                                <th>Dark</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {RowOfButtons("Default")}
+                            {RowOfButtons("Outline", "outline")}
+                            {RowOfButtons("Disabled", "disabled")}
+                        </tbody>
+                    </table>
+                </div>
                 {sizes}
             </section>
         </>

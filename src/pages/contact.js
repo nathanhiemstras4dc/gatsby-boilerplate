@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
-import { ImgHeroExample } from "../components/images/heroes/example";
+import { ImgHeroExample } from "../components/images";
 
 const AboutPage = ({ data }) => {
     const sectionHero = (

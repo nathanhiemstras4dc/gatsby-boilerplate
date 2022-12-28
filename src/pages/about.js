@@ -1,8 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import MetaTags from "../components/meta-tags";
-import { ImgHeroExample } from "../components/images/heroes/example";
-import { ImgGeneralExample } from "../components/images/general/example";
+import { ImgHeroExample, ImgGeneralExample } from "../components/images";
 import Hero from "../components/hero";
 
 const AboutPage = ({ data }) => {

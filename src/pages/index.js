@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import MetaTags from "../components/meta-tags"
-import { ImgHeroExample } from "../components/images/heroes/example";
+import { ImgHeroExample } from "../components/images";
 import Hero from "../components/hero";
 
 
@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
     const sectionIntro = (
         <section>
             <div className="container my-6">
-                <h2 class="h4">{pageHome.introheadline}</h2>
+                <h2 className="h4">{pageHome.introheadline}</h2>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: pageHome.introbody,
