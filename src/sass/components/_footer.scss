@@ -1,14 +1,14 @@
-.footer {
-  &--menu {
-    @include media-breakpoint-down(md) {
-      margin: 0 14vw;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-    margin: 0 4vw;
-  }
-}
+// .footer {
+//   &--menu {
+//     margin: 0 4vw;
+//     @include media-breakpoint-down(md) {
+//       margin: 0 14vw;
+//       &:first-child {
+//         margin-left: 0;
+//       }
+//       &:last-child {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+// }

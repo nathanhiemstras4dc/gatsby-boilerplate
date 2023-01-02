@@ -177,19 +177,21 @@ $hero-height: 847px;
 $hero-height-secondary: 540px;
 
 // Menus
-$menu-primary-height: 84px;
-$menu-primary-color: #fff;
-$menu-primary-font: $headings-font-family;
-$menu-primary-weight: $h3-font-weight;
-$menu-primary-size: $h3-font-size;
-$menu-primary-letter-spacing: $h3-letter-spacing;
+$menu-main-height: 84px;
+$menu-main-color: #fff;
+$menu-main-font: $headings-font-family;
+$menu-main-weight: $h3-font-weight;
+$menu-main-size: $h3-font-size;
+$menu-main-letter-spacing: $h3-letter-spacing;
 
-$menu-primary-color-desktop: $dark;
-$menu-primary-font-desktop: $menu-primary-font;
-$menu-primary-weight-desktop: 500;
-$menu-primary-size-desktop: 15px;
-$menu-primary-letter-spacing-desktop: 0.01em;
-$menu-primary-breakpoint: lg;
+$menu-main-color-desktop: $dark;
+$menu-main-font-desktop: $menu-main-font;
+$menu-main-weight-desktop: 500;
+$menu-main-size-desktop: 15px;
+$menu-main-letter-spacing-desktop: 0.01em;
+$menu-main-breakpoint: lg;
+
+$menu-footer-size: $h7-font-size;
 
 // Images
 

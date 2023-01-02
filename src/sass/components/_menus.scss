@@ -8,7 +8,7 @@
     box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0.1);
     z-index: $zindex-fixed + 2;
     width: 100%;
-    height: $menu-primary-height;
+    height: $menu-main-height;
     // .page-home & {
     //     background-color: $header-bg-color-home;
     //     box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0);
@@ -16,7 +16,7 @@
   }
 }
 
-.navbar--primary {
+.navbar--main {
   &-btn.nav-link.nav-link {
     @extend .btn;
     @extend .btn-light;
@@ -25,7 +25,7 @@
     text-transform: uppercase;
     font-weight: 600;
 
-    @include media-breakpoint-down($menu-primary-breakpoint) {
+    @include media-breakpoint-down($menu-main-breakpoint) {
       position: fixed;
       bottom: $spacing-3;
       left: $spacing-3;
@@ -37,7 +37,7 @@
       }
     }
 
-    @include media-breakpoint-up($menu-primary-breakpoint) {
+    @include media-breakpoint-up($menu-main-breakpoint) {
       color: $white;
       background-color: $primary;
       border-color: $primary;
@@ -48,19 +48,19 @@
 
   .nav-link {
     &:not(.navbar--primary-btn) {
-      font-family: $menu-primary-font;
+      font-family: $menu-main-font;
 
-      @include media-breakpoint-up($menu-primary-breakpoint) {
+      @include media-breakpoint-up($menu-main-breakpoint) {
         text-transform: uppercase;
-        color: $menu-primary-color-desktop;
-        letter-spacing: $menu-primary-letter-spacing-desktop;
-        font-weight: $menu-primary-weight-desktop;
-        font-size: $menu-primary-size-desktop;
+        color: $menu-main-color-desktop;
+        letter-spacing: $menu-main-letter-spacing-desktop;
+        font-weight: $menu-main-weight-desktop;
+        font-size: $menu-main-size-desktop;
       }
     }
   }
 
-  @include media-breakpoint-down($menu-primary-breakpoint) {
+  @include media-breakpoint-down($menu-main-breakpoint) {
     .navbar-toggler {
       &:not(.collapsed) {
         z-index: $zindex-fixed + 1;
@@ -105,10 +105,10 @@
         }
         .nav-link {
           &:not(.navbar--primary-btn) {
-            color: $menu-primary-color;
-            font-size: $menu-primary-size;
-            font-weight: $menu-primary-weight;
-            letter-spacing: $menu-primary-letter-spacing;
+            color: $menu-main-color;
+            font-size: $menu-main-size;
+            font-weight: $menu-main-weight;
+            letter-spacing: $menu-main-letter-spacing;
             z-index: $zindex-fixed + 1;
 
             @media (max-height: 700px) {
@@ -118,6 +118,31 @@
             @media (max-height: 500px) {
               font-size: $h5-font-size;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  &-footer {
+    display: block;
+    font-size: $menu-footer-size;
+
+    .nav-link {
+      &.active {
+        color: $white;
+      }
+      &.nav-link {
+        padding-left: 0;
+        padding-right: $spacing-2;
+      }
+      &:not(:first-child) {
+        &:before {
+          @include media-breakpoint-up(md) {
+            content: "|";
+            margin: 0 $spacing-2;
           }
         }
       }

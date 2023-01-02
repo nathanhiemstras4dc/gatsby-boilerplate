@@ -3,11 +3,6 @@ import React from "react"
 import SiteLogoLight from "./site-logo-light"
 import MenuFooter from "./menu-footer"
 import MenuUtility from "./menu-utility"
-import imgSocialFacebook from "../../static/icons/social-media/facebook.svg"
-import imgSocialYouTube from "../../static/icons/social-media/youtube.svg"
-import imgSocialInstagram from "../../static/icons/social-media/instagram.svg"
-import imgSocialLinkedIn from "../../static/icons/social-media/linked-in.svg"
-import imgSocialTwitter from "../../static/icons/social-media/twitter.svg"
 
 const Footer = ({ data }) => {
   return (
@@ -30,14 +25,13 @@ const Footer = ({ data }) => {
             </p>
 
             <p>Copyright ©2023. All Rights Reserved.</p>
-            <p>Terms of Use | Privacy Policy</p>
           </div>
           <div
-            className="footer--group-menus d-flex align-items-start mt-5 mt-md-n3"
+            className="footer--group-menus mt-5 mt-md-n3"
             style={{ fontSize: "20px", lineHeight: "32px" }}
           >
-            <MenuFooter className="footer--menu" />
-            {/* <MenuUtility className="footer--menu" /> */}
+            <MenuFooter className="menu-footer" />
+            <MenuUtility className="menu-footer mt-md-n5" />
           </div>
         </div>
       </div>

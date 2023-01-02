@@ -30,7 +30,7 @@ const MenuHeader = () => {
         const menuHierarchical = flatListToHierarchical(wpMenu.menuItems.nodes)
 
         return !!wpMenu && !!wpMenu.menuItems && !!wpMenu.menuItems.nodes ? (
-            <Navbar expand="lg" className="navbar--primary">
+            <Navbar expand="lg" className="navbar--main">
                 <Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

@@ -20,19 +20,22 @@ const MenuUtility = (props) => {
         }
     `);
 
-    const menuHierarchical = flatListToHierarchical(wpMenu.menuItems.nodes);
+    if (wpMenu) {
 
-    return !!wpMenu && !!wpMenu.menuItems && !!wpMenu.menuItems.nodes ? (
-        <Navbar expand="md" className={props.className}>
-            <Nav className="me-auto" defaultActiveKey="/">
-                {menuHierarchical.map((menuItem, i) => (
-                    <Nav.Link key={`menu-${i}`} href={menuItem.url}>
-                        {menuItem.label}
-                    </Nav.Link>
-                ))}
-            </Nav>
-        </Navbar>
-    ) : null;
+        const menuHierarchical = flatListToHierarchical(wpMenu.menuItems.nodes);
+
+        return !!wpMenu && !!wpMenu.menuItems && !!wpMenu.menuItems.nodes ? (
+            <Navbar expand="md" className={props.className}>
+                <Nav className="me-auto" defaultActiveKey="/">
+                    {menuHierarchical.map((menuItem, i) => (
+                        <Nav.Link key={`menu-${i}`} href={menuItem.url}>
+                            {menuItem.label}
+                        </Nav.Link>
+                    ))}
+                </Nav>
+            </Navbar>
+        ) : null;
+    }
 };
 
 export default MenuUtility;
