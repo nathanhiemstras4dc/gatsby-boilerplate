@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export function ImgHeroExample(props) {
     return (
         <StaticImage
-            src="../../../../static/images/heroes/example.jpg"
+            src="../../static/images/heroes/example.jpg"
             alt={props.alt}
             className={props.className}
             layout="fullWidth"
@@ -17,7 +17,7 @@ export function ImgHeroExample(props) {
 export function ImgGeneralExample(props) {
     return (
         <StaticImage
-            src="../../../../static/images/general/example.jpg"
+            src="../../static/images/general/example.jpg"
             alt={props.alt}
             className={props.className}
             layout="fullWidth"

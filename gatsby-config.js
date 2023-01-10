@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `S4DC Gatsby Boilerplate`,
-    siteUrl: `https://onmed.com`,
+    siteUrl: `https://gatsbyboilerplatemaster.gatsbyjs.io/`,
   },
 
   plugins: [
